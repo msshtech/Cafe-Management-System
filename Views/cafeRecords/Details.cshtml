@@ -1,0 +1,65 @@
+﻿@model Cafe.Models.cafeRecord
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>SHOW DATA</h2>
+
+<div>
+    <h4>CAFE SYSTEM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Food_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Food_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Payment_method)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Payment_method)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Waited_By)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Waited_By)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

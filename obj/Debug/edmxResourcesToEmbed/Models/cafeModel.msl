@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cafeDbModelStoreContainer" CdmEntityContainer="cafeDbEntity">
+    <EntitySetMapping Name="cafeRecords">
+      <EntityTypeMapping TypeName="cafeDbModel.cafeRecord">
+        <MappingFragment StoreEntitySet="cafeRecord">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="C_Name" ColumnName="C_Name" />
+          <ScalarProperty Name="Food_Name" ColumnName="Food_Name" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="C_Payment_method" ColumnName="C_Payment_method" />
+          <ScalarProperty Name="Waited_By" ColumnName="Waited By" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
